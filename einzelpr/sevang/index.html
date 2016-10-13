@@ -1,0 +1,258 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Template Strings Präsentation</title>
+    <link rel="stylesheet" href="styles/reveal.css">
+    <link rel="stylesheet" href="styles/sky.css">
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+
+            <section>
+                <h2>JavaScript ECMAScript 6:</h2>
+                <h1>Template Strings</h1>
+                <h4>Präsentation von Sevan Ghazarian<br>Webprogrammierung<br>WWI15AMB<br>26.10.2016</h4>
+            </section>
+
+
+            <section>
+                <h2>Kompatibilität</h2>
+                <br>
+                <br>
+                <table style="width: 50px; position: relative; right: 40px;">
+                    <thead>
+                        <tr>
+                            <th style="border-right: 1px solid;">Chrome</th>
+                            <th style="border-right: 1px solid;">Edge</th>
+                            <th style="border-right: 1px solid;">Firefox (Gecko)</th>
+                            <th style="border-right: 1px solid;">Internet Explorer </th>
+                            <th style="border-right: 1px solid;">Opera</th>
+                            <th>Safari</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="border-right: 1px solid;">41</td>
+                            <td style="border-right: 1px solid;">(Ja)</td>
+                            <td style="border-right: 1px solid;">34 (34)</td>
+                            <td style="color: red; border-right: 1px solid; border-right-color: black;">Nicht unterstützt</td>
+                            <td style="border-right: 1px solid;">28.0</td>
+                            <td style="color: red;">Nicht unterstützt</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+
+            <section>
+                <h2>Was ist ein<br>Template String?</h2>
+                <p>
+                    <br>Template Strings benutzen backticks (``)</p>
+                <pre style="width: 700px;"><code class="prettyprint" lang-js><span class="nocode">1</span>  //Normale Strings:
+<span class="nocode">2</span>  var str1 = "blabla";
+<span class="nocode">3</span>  var str2 = 'blabla';
+<span class="nocode">4</span>  
+<span class="nocode">5</span>  //Template String:
+<span class="nocode">6</span>  var str3 = `blabla`;</code></pre>
+
+            </section>
+
+
+            <section>
+                <section>
+                    <h2>Was können<br>Template Strings?</h2>
+                    <br>
+                    <ul>
+                        <li class="fragment">Mehrzeilige Strings</li>
+                        <li class="fragment">Ausdrücke einbetten</li>
+                        <li class="fragment">Tagged Template Strings</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Mehrzeilige Strings</h2>
+                    <div class="fragment">
+                        <h3>Code</h3>
+                        <pre style="width: 700px;"><code class="prettyprint" lang-js><span class="nocode">1</span>  var str = `String Zeile 1
+<span class="nocode">2</span>  String Zeile 2`;</code></pre></div>
+                    <div class="fragment">
+                        <h3><br>Konsole</h3>
+                        <pre style="width: 700px;"><code>String Zeile 1
+String Zeile 2</code></pre></div>
+                </section>
+                <section>
+                    <h2>Ausdrücke einbetten</h2>
+                    <div class="fragment">
+                        <h3>Code</h3>
+                        <pre style="width: 705px;"><code class="prettyprint" lang-js><span class="nocode">1</span>  var name = "Sevan";
+<span class="nocode">2</span>  
+<span class="nocode">3</span>  console.log(`Mein Name ist ${name}.`);</code></pre></div>
+                    <div class="fragment">
+                        <h3><br>Konsole</h3>
+                        <pre style="width: 700px;"><code>Mein Name ist Sevan.</code></pre></div>
+                </section>
+                <section>
+                    <h3>Tagged Template Strings</h3>
+                    <div class="fragment">
+                        <h4>Code</h4>
+                        <pre style="width: 700px;"><code class="prettyprint" lang-js><span class="nocode">1</span>  var name = "Sevan";
+<span class="nocode">2</span>  var alter = 19;
+<span class="nocode">3</span>                      
+<span class="nocode">4</span>  function tag(strings, ...ausdrücke) {
+<span class="nocode">5</span>      console.log(strings);
+<span class="nocode">6</span>      console.log(ausdrücke);
+<span class="nocode">7</span>  }
+<span class="nocode">8</span>  
+<span class="nocode">9</span>  tag `Mein Name ist ${name} und ich bin ${alter} Jahre alt.`;</code></pre></div>
+                    <div class="fragment">
+                        <h4>Konsole</h4>
+                        <pre style="width: 700px;"><code>▼Array[3]
+    0: "Mein Name ist "
+    1: " und ich bin "
+    2: " Jahre alt."
+    length: 3
+▼Array[2]
+    0: "Sevan"
+    1: 19
+    length: 2
+</code></pre></div>
+                </section>
+            </section>
+
+
+            <section>
+                <h3>Im Vergleich</h3>
+                <h4>Gewünschte Konsolenausgabe</h4>
+                <pre style="width: 700px;"><code>Eine ganz einfache Addition:
+
+Das Ergebnis von a(=12) addiert mit b(=10) ist 22.</code></pre>
+                <h4>Normaler String</h4>
+                <pre style="width: 1365px;position:relative; right: 202px;"><code class="prettyprint" lang-js><span class="nocode">1</span>  var a = 12;
+<span class="nocode">2</span>  var b = 10;
+<span class="nocode">3</span>        
+<span class="nocode">4</span>  console.log("Eine einfache Addition:\n\nDas Ergebnis von a(=" + a + ") addiert mit b(=" + b + ") ist " + (a + b) + ". ");</code></pre>
+                <h4>Template String</h4>
+                <pre style="width: 707px;"><code class="prettyprint" lang-js><span class="nocode">1</span>  var a = 12;
+<span class="nocode">2</span>  var b = 10;
+<span class="nocode">3</span>           
+<span class="nocode">4</span>  console.log(`Eine einfache Addition:
+<span class="nocode">5</span>
+<span class="nocode">6</span>  Das Ergebnis von a(=${a}) addiert mit b(=${b}) ist ${a+b}.`);</code></pre>
+            </section>
+
+
+            <section>
+                <h2><br><br>Danke für Ihre Aufmerksamkeit!<br>Noch Fragen?</h2>
+            </section>
+        </div>
+    </div>
+    <script>
+        var a = 12;
+        var b = 10;
+
+        console.log("Eine einfache Addition:\n\nDas Ergebnis von a(=" + a + ") addiert mit b(=" + b + ") ist " + (a + b) + ". ");
+        console.log(`Eine einfache Addition:
+
+Das Ergebnis von a(=${a}) addiert mit b(=${b}) ist ${a+b}.`);
+
+        var name = "Sevan ";
+        var alter = 19;
+
+        function tag(strings, ...ausdrücke) {
+            console.log(strings);
+            console.log(ausdrücke);
+        }
+
+        tag `Mein Name ist ${name} und ich bin ${alter} Jahre alt.`;
+    </script>
+    <script src="js/reveal.js"></script>
+    <script src="js/run_prettify.js"></script>
+    <script>
+        Reveal.initialize({
+            // Display controls in the bottom right corner     
+            controls: false,
+            // Display a presentation progress bar     
+            progress: true,
+            // Display the page number of the current slide
+            slideNumber: true,
+            // Push each slide change to the browser history     
+            history: true,
+            // Enable keyboard shortcuts for navigation     
+            keyboard: true,
+            // Enable the slide overview mode     
+            overview: true,
+            // Vertical centering of slides     
+            center: false,
+            // Enables touch navigation on devices with touch input     
+            touch: true,
+            // Loop the presentation     
+            loop: false,
+            // Change the presentation direction to be RTL     
+            rtl: false,
+            // Randomizes the order of slides each time the presentation loads     
+            shuffle: false,
+            // Turns fragments on and off globally     
+            fragments: true,
+
+            // Flags if the presentation is running in an embedded mode,     
+            // i.e. contained within a limited portion of the screen     
+            embedded: false,
+
+            // Flags if we should show a help overlay when the questionmark     
+            // key is pressed     
+            help: true,
+
+            // Flags if speaker notes should be visible to all viewers     
+            showNotes: false,
+
+            // Number of milliseconds between automatically proceeding to the     
+            // next slide, disabled when set to 0, this value can be overwritten     
+            // by using a data-autoslide attribute on your slides     
+            autoSlide: 0,
+
+            // Stop auto-sliding after user input     
+            autoSlideStoppable: true,
+            // Use this method for navigation when auto-sliding     
+            autoSlideMethod: Reveal.navigateNext,
+            // Enable slide navigation via mouse wheel     
+            mouseWheel: false,
+            // Hides the address bar on mobile devices     
+            hideAddressBar: true,
+            // Opens links in an iframe preview overlay    
+            previewLinks: false,
+
+            // Transition style     
+            transition: 'convex',
+            // none/fade/slide/convex/concave/zoom 
+
+            // Transition speed     
+            transitionSpeed: 'default',
+            // default/fast/slow     
+
+            // Transition style for full page slide backgrounds     
+            backgroundTransition: 'convex',
+            // none/fade/slide/convex/concave/zoom   
+
+            // Number of slides away from the current that are visible     
+            viewDistance: 3,
+            // Parallax background image     
+            parallaxBackgroundImage: '',
+            // e.g. " 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg' " 
+
+            // Parallax background size     
+            parallaxBackgroundSize: '',
+            // CSS syntax, e.g. "2100px 900px "   
+
+            // Number of pixels to move the parallax background per slide     
+            // - Calculated automatically unless specified     
+            // - Set to 0 to disable movement along an axis    
+            parallaxBackgroundHorizontal: null,
+            parallaxBackgroundVertical: null
+        });;
+    </script>
+</body>
+
+</html>
