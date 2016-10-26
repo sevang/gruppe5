@@ -1,98 +1,122 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Robin Groß</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-        <link rel="shortcut icon" href="grafiken/headicon2.png" type="image/png" />
-        <link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/selfmade.css">
+    <title>Robin Groß</title>
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <link rel="shortcut icon" href="grafiken/headicon2.png" type="image/png" />
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/selfmade.css">
 
-		<!-- Printing and PDF exports -->
-        
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-        <div class="reveal">
-            <div class="slides">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h1>JavaScript ECMAScript 6:</h1>
+                <br>
+                <font size="30">Enhanced Object Literals</font>
+            </section>
+            <section>
+                <h1>Was ist ECMAScript?</h1>
+            </section>
+            <section>
                 <section>
-                    <h1>JavaScript ECMAScript 6:</h1>
+                    <h1>Was sind Object Literals?</h1></section>
+                <section>
+                    <h1>Literals</h1> </section>
+                <section>
+                    <h1>Object Literals</h1>
                     <br>
-                    <font size="30">Enhanced Object Literals</font>
-                </section>
-                <section> <h1>Was ist ECMAScript?</h1>
+                    <img width="1000px" src="grafiken/Screenshot1.PNG"> </section>
+            </section>
+            <section>
+                <h1>Unterschied von ES5 zu ES6</h1>
+                <section>
+                    <p align="justify"><font color="#4286f4">function</font> getCar(make, model, value) {
+                        <br>
+                        <font color="#328e30">return</font> {
+                        <br> &nbsp;&nbsp; make: make,
+                        <br> &nbsp;&nbsp; model: model,
+                        <br> &nbsp;&nbsp; value: value,
+                        <br> };
+                        <br> }
+                    </p>
                 </section>
                 <section>
-                    <section><h1>Was sind Object Literals?</h1></section>
-                    <section> <h1>Literals</h1> </section>
-                    <section> <h1>Object Literals</h1><br>
-                       <img width="1000px" src="grafiken/Screenshot1.PNG"> </section>
+                    <p align="justify"><font color="#4286f4">function</font> getCar(make, model, value) {
+                        <br>
+                        <font color="#328e30">return</font> {
+                        <br> &nbsp;&nbsp; make: make,
+                        <br> &nbsp;&nbsp; model: model,
+                        <br> &nbsp;&nbsp; value: value,
+                        <br> };
+                        <br> }
+                    </p>
+                    <p align="justify"><font color="#4286f4">function</font> getCar(make, model, value) {
+                        <br>
+                        <font color="#328e30">return</font> {
+                        <br> &nbsp;&nbsp; make,
+                        <br> &nbsp;&nbsp; model,
+                        <br> &nbsp;&nbsp; value,
+                        <br> };
+                        <br> }
+                    </p>
                 </section>
-                <section> <h1>Unterschied von ES5 zu ES6</h1>
                 <section>
-                    <p align="justify"><font color="#4286f4">function</font> getCar(make, model, value) { <br>
-                    <font color="#328e30">return</font> { <br>
-                    &nbsp;&nbsp; make: make, <br>
-                    &nbsp;&nbsp; model: model, <br>
-                    &nbsp;&nbsp; value: value, <br>
-                    }; <br>
-                    }</p>
-                </section>
-                <section>
-                   <p align="justify"><font color="#4286f4">function</font> getCar(make, model, value) { <br>
-                    <font color="#328e30">return</font> { <br>
-                    &nbsp;&nbsp; make: make, <br>
-                    &nbsp;&nbsp; model: model, <br>
-                    &nbsp;&nbsp; value: value, <br>
-                    }; <br>
-                    }</p>
-                    <p align="justify"><font color="#4286f4">function</font> getCar(make, model, value) { <br>
-                    <font color="#328e30">return</font> { <br>
-                    &nbsp;&nbsp; make, <br>
-                    &nbsp;&nbsp; model, <br>
-                    &nbsp;&nbsp; value, <br>
-                    }; <br>
-                    }</p>
-                </section>
-                    <section><br> <img width="800px" src="grafiken/Screenshot1.PNG">  <img width="800px" src="grafiken/Screenshot2.PNG"></section>
-                </section>
-                
-                <section>
-                 
-                    <img width="200px" src="grafiken/endlogo2.png"> <br>
-                    Vielen Dank für Ihre Aufmerksamkeit
-                </section>
+                    <br> <img width="800px" src="grafiken/Screenshot1.PNG"> <img width="800px" src="grafiken/Screenshot2.PNG"></section>
+            </section>
 
-            </div>
+            <section>
+
+                <img width="200px" src="grafiken/endlogo2.png">
+                <br> Vielen Dank für Ihre Aufmerksamkeit
+            </section>
+
         </div>
+    </div>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
 
-		<script>
-			// More info https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				history: true,
+    <script>
+        // More info https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            history: true,
 
-				// More info https://github.com/hakimel/reveal.js#dependencies
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+            // More info https://github.com/hakimel/reveal.js#dependencies
+            dependencies: [{
+                src: 'plugin/markdown/marked.js'
+            }, {
+                src: 'plugin/markdown/markdown.js'
+            }, {
+                src: 'plugin/notes/notes.js',
+                async: true
+            }, {
+                src: 'plugin/highlight/highlight.js',
+                async: true,
+                callback: function() {
+                    hljs.initHighlightingOnLoad();
+                }
+            }]
+        });
+    </script>
+</body>
+
 </html>
