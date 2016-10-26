@@ -4,7 +4,7 @@ Einzelpräsentationen:
 
 [Präsentation Z. Kakhki (Arrow Functions)](https://htmlpreview.github.io/?https://github.com/sevang/gruppe5/blob/master/einzelpr/kakhki_z/Finalversion.html)
 
-[Präsentation R. Gross (Geolocation)](https://htmlpreview.github.io/?https://github.com/sevang/gruppe5/blob/master/einzelpr/gross_r/index.html)
+[Präsentation R. Gross (Enhanced Object Literals)](https://htmlpreview.github.io/?https://github.com/sevang/gruppe5/blob/master/einzelpr/gross_r/index.html)
 
 [Präsentation L. Richter (Map, set, weakmap, weakset)](https://htmlpreview.github.io/?https://github.com/sevang/gruppe5/blob/master/einzelpr/richter_l/slides-deck.html)
 
