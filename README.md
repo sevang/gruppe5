@@ -12,3 +12,6 @@ Einzelpräsentationen:
 
 Gruppenpräsentation:
 [to be added](https://github.com/sevang/gruppe5/)
+
+Dokumentation zur Gruppenpräsentation:
+[Dokumentation](https://github.com/sevang/gruppe5/blob/master/gruppenarbeit/Dokumentation.docx)
