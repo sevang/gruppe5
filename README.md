@@ -1,6 +1,6 @@
 Einzelpräsentationen:
 
-[Präsentation N. Lunitz (Geolocation)](https://htmlpreview.github.io/?https://github.com/sevang/gruppe5/blob/master/einzelpr/lunitz_n/Geolocation%20N.Lunitz.html)
+[Präsentation N. Lunitz (Geolocation)](https://htmlpreview.github.io/?https://github.com/sevang/gruppe5/blob/master/einzelpr/lunitz_n/Geolocation_Lunitz.html)
 
 [Präsentation Z. Kakhki (Arrow Functions)](https://htmlpreview.github.io/?https://github.com/sevang/gruppe5/blob/master/einzelpr/kakhki_z/Finalversion.html)
 
