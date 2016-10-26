@@ -11,7 +11,7 @@ Einzelpräsentationen:
 [Präsentation S. Ghazarian (Template Strings)](https://htmlpreview.github.io/?https://github.com/sevang/gruppe5/blob/master/einzelpr/ghazarian_s/index.html)
 
 Gruppenpräsentation:
+
 [to be added](https://github.com/sevang/gruppe5/)
 
-Dokumentation zur Gruppenpräsentation:
 [Dokumentation](https://github.com/sevang/gruppe5/blob/master/gruppenarbeit/Dokumentation.docx)
