@@ -23,7 +23,7 @@
                 <h2>Kompatibilität</h2>
                 <br>
                 <br>
-                <table style="width: 50px; position: relative; right: 40px;">
+                <table>
                     <thead>
                         <tr>
                             <th style="border-right: 1px solid;">Chrome</th>
@@ -52,7 +52,7 @@
                 <h2>Was ist ein<br>Template String?</h2>
                 <p>
                     <br>Template Strings benutzen backticks (``)</p>
-                <pre style="width: 700px;"><code class="prettyprint" lang-js><span class="nocode">1</span>  //Normale Strings:
+                <pre><code class="prettyprint" lang-js><span class="nocode">1</span>  //Normale Strings:
 <span class="nocode">2</span>  var str1 = "blabla";
 <span class="nocode">3</span>  var str2 = 'blabla';
 <span class="nocode">4</span>  
@@ -76,29 +76,29 @@
                     <h2>Mehrzeilige Strings</h2>
                     <div class="fragment">
                         <h3>Code</h3>
-                        <pre style="width: 700px;"><code class="prettyprint" lang-js><span class="nocode">1</span>  var str = `String Zeile 1
+                        <pre><code class="prettyprint" lang-js><span class="nocode">1</span>  var str = `String Zeile 1
 <span class="nocode">2</span>  String Zeile 2`;</code></pre></div>
                     <div class="fragment">
                         <h3><br>Konsole</h3>
-                        <pre style="width: 700px;"><code>String Zeile 1
+                        <pre><code>String Zeile 1
 String Zeile 2</code></pre></div>
                 </section>
                 <section>
                     <h2>Ausdrücke einbetten</h2>
                     <div class="fragment">
                         <h3>Code</h3>
-                        <pre style="width: 705px;"><code class="prettyprint" lang-js><span class="nocode">1</span>  var name = "Sevan";
+                        <pre><code class="prettyprint" lang-js><span class="nocode">1</span>  var name = "Sevan";
 <span class="nocode">2</span>  
 <span class="nocode">3</span>  console.log(`Mein Name ist ${name}.`);</code></pre></div>
                     <div class="fragment">
                         <h3><br>Konsole</h3>
-                        <pre style="width: 700px;"><code>Mein Name ist Sevan.</code></pre></div>
+                        <pre><code>Mein Name ist Sevan.</code></pre></div>
                 </section>
                 <section>
                     <h3>Tagged Template Strings</h3>
                     <div class="fragment">
                         <h4>Code</h4>
-                        <pre style="width: 700px;"><code class="prettyprint" lang-js><span class="nocode">1</span>  var name = "Sevan";
+                        <pre><code class="prettyprint" lang-js><span class="nocode">1</span>  var name = "Sevan";
 <span class="nocode">2</span>  var alter = 19;
 <span class="nocode">3</span>                      
 <span class="nocode">4</span>  function tag(strings, ...ausdrücke) {
@@ -109,7 +109,7 @@ String Zeile 2</code></pre></div>
 <span class="nocode">9</span>  tag `Mein Name ist ${name} und ich bin ${alter} Jahre alt.`;</code></pre></div>
                     <div class="fragment">
                         <h4>Konsole</h4>
-                        <pre style="width: 700px;"><code>▼Array[3]
+                        <pre><code>▼Array[3]
     0: "Mein Name ist "
     1: " und ich bin "
     2: " Jahre alt."
@@ -126,16 +126,16 @@ String Zeile 2</code></pre></div>
             <section>
                 <h3>Im Vergleich</h3>
                 <h4>Gewünschte Konsolenausgabe</h4>
-                <pre style="width: 700px;"><code>Eine einfache Addition:
+                <pre><code>Eine einfache Addition:
 
 Das Ergebnis von a(=12) addiert mit b(=10) ist 22.</code></pre>
                 <h4>Normaler String</h4>
-                <pre style="width: 1365px;position:relative; right: 202px;"><code class="prettyprint" lang-js><span class="nocode">1</span>  var a = 12;
+                <pre><code class="prettyprint" lang-js><span class="nocode">1</span>  var a = 12;
 <span class="nocode">2</span>  var b = 10;
 <span class="nocode">3</span>        
 <span class="nocode">4</span>  console.log("Eine einfache Addition:\n\nDas Ergebnis von a(=" + a + ") addiert mit b(=" + b + ") ist " + (a + b) + ". ");</code></pre>
                 <h4>Template String</h4>
-                <pre style="width: 707px;"><code class="prettyprint" lang-js><span class="nocode">1</span>  var a = 12;
+                <pre><code class="prettyprint" lang-js><span class="nocode">1</span>  var a = 12;
 <span class="nocode">2</span>  var b = 10;
 <span class="nocode">3</span>           
 <span class="nocode">4</span>  console.log(`Eine einfache Addition:
