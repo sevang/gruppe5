@@ -16,7 +16,7 @@ Gruppe: Nastassia Lunitz, Zaman Kakhki, Robin Gross, Leon Richter, Sevan Ghazari
 * Reise löschen
 * Bilder ansehen und mit Pfeiltasten bzw. Leisten zu anderen Bildern wechseln
 
-## Verwendete HTML 5 APIs 
+## Verwendete HTML 5 APIs
 * History API
 * Web Storage
 * Drag & Drop
