@@ -1,6 +1,6 @@
 # Gruppe 5 - TripPix
 
-TripPix dient dem Nutzer dazu, für Reisen, welche dieser getätigt hat, eine Sammlung zu erstellen und diese mit Fotos zu füllen, sodass der Nutzer sich schließlich die Reisen mit den dazugehörigen Bildern ansehen kann.
+Trippix dient dazu, dem Nutzer eine Sammlung aus verschiedenen Reisen zu erstellen, die er unternommen hat. Zu jeder Reise kann der Nutzer ein Reisefoto hinzufügen, sodass er sich die angelegten Reisen mit dem jeweiligen Bild ansehen kann.
 
 Gruppe: Nastassia Lunitz, Zaman Kakhki, Robin Gross, Leon Richter, Sevan Ghazarian
 

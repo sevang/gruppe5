@@ -1,3 +1,4 @@
+//Profilbild wird geladen
 function loadUserpic() {
     var c = document.getElementById("userpic");
     var context = c.getContext("2d");
@@ -13,13 +14,14 @@ function loadUserpic() {
     }
 }
 
+//Beim Klick auf das Profilbild
 function userpicClick() {
     history.pushState(null, null, '/Bild/');
     document.getElementById("title").innerHTML = "Profilbild ändern";
     document.getElementById("startseite").innerHTML = "";
     document.getElementById("startseite").style.visibility = "hidden";
     document.getElementById("changename").style.visibility = "hidden";
-    document.getElementById("changepic").style.visibility = "visible";
+    document.getElementById("changepic").style.visibility = "visible"; //Seite zum Profilbild ändern wird angezeigt
     document.getElementById("plus").style.visibility = "hidden";
     document.getElementById("addReise").style.visibility = "hidden";
     document.getElementById("showReise").style.visibility = "hidden";
@@ -35,7 +37,7 @@ function userpicClick() {
     sessionStorage.removeItem("activeReise");
 }
 
-
+//Neues Profilbild speichern
 function saveNewPic() {
     var imgAsDataURL1 = document.getElementById("userpicCanvas").toDataURL("image/png");
     localStorage.setItem("userpic", imgAsDataURL1);
@@ -46,6 +48,7 @@ function saveNewPic() {
 
 var MAX_HEIGHT = 100;
 
+//Bild wird komprimiert auf 100px
 function render(src) {
     var image = new Image();
     image.onload = function () {
@@ -63,6 +66,7 @@ function render(src) {
     image.src = src;
 }
 
+//gedroppte Datei wird ausgelesen
 function loadImage(src) {
 
     if (!src.type.match(/image.*/)) {
@@ -78,6 +82,7 @@ function loadImage(src) {
     reader.readAsDataURL(src);
 }
 
+//Aus userpicDropzone wird eine Dropzone für Drag & Drop; Drag & Drop Events werden eingefügt
 var target = document.getElementById("userpicDropzone");
 target.addEventListener("dragover", function (e) {
     e.preventDefault();

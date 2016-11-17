@@ -1,3 +1,4 @@
+//Beim klicken auf TripPix Logo wird die Startseite geladen
 function iconClick() {
     history.pushState(null, null, '/');
     document.getElementById("title").innerHTML = "Willkommen zurück!";

@@ -193,6 +193,7 @@ function right() {
 
 var MAX_HEIGHT = 400;
 
+//Bild wird komprimiert auf 400px
 function render1(src1) {
     var image1 = new Image();
     image1.onload = function () {
@@ -201,6 +202,8 @@ function render1(src1) {
             image1.width *= MAX_HEIGHT / image1.height;
             image1.height = MAX_HEIGHT;
         }
+
+        //komprimiertes Bild wird auf ein Canvas Feld gezeichnet
         var ctx1 = canvas1.getContext("2d");
         ctx1.clearRect(0, 0, canvas1.width, canvas1.height);
         canvas1.width = image1.width;
@@ -209,32 +212,15 @@ function render1(src1) {
     };
     image1.src = src1;
 
-    /*-----------------------------BLOB-------------------------------
-    var canvass = document.getElementById("reisecanvas");
-
-    var dataURL = canvass.toDataURL("image/png");
-    var data = atob(dataURL.substring("data:image/png;base64,".length)),
-        asArray = new Uint8Array(data.length);
-
-    for (var i = 0, len = data.length; i < len; ++i) {
-        asArray[i] = data.charCodeAt(i);
-    }
-
-    var blob = new Blob([asArray.buffer], {
-        type: "image/png"
-    });
-
-    localStorage.setItem("reiseblob", blob);
-    -------------------------------------------------------------------*/
 }
 
+//gedroppte Datei wird ausgelesen
 function loadImage1(src1) {
 
     if (!src1.type.match(/image.*/)) {
         console.log("The dropped file is not an image: ", src1.type);
         return;
     }
-
 
     var reader1 = new FileReader();
     reader1.onload = function (e) {
@@ -243,6 +229,7 @@ function loadImage1(src1) {
     reader1.readAsDataURL(src1);
 }
 
+//Aus reiseDropzone wird eine Dropzone für Drag & Drop; Drag & Drop Events werden eingefügt
 var target1 = document.getElementById("reisepicDropzone");
 target1.addEventListener("dragover", function (e) {
     e.preventDefault();

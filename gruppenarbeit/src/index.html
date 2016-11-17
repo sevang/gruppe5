@@ -11,6 +11,7 @@
 
 
 <body id="body" onkeyup="if (event.keyCode == 37) left(); if (event.keyCode == 39) right()">
+    <!--Navigationsleiste-->
     <div id="navbar">
         <nav>
             <ul></ul>
@@ -23,12 +24,16 @@
     </div>
 
     <div id="page-wrap">
+        <!--Weißer Kasten-->
         <div id="kasten">
             <div id="content">
+                <!--Überschrift-->
                 <h1 id="title">Willkommen zurück!</h1>
+                <!--Startseite, die dynamisch mittels for-Schleife nachgeladen wird-->
                 <div id="startseite">
                 </div>
 
+                <!--Seite zum Name ändern-->
                 <div id="changename">
                     <p>Neuer Username:</p>
                     <br>
@@ -38,6 +43,7 @@
                     </p>
                 </div>
 
+                <!--Seite zum Profilbild ändern-->
                 <div id="changepic">
                     <div id="userpicDropzone">
                         <p>Ziehe dein neues Profilbild in den Kasten</p>
@@ -47,6 +53,7 @@
                     <button id="saveUserpicButton" onclick="saveNewPic()">Speichern</button>
                 </div>
 
+                <!--Seite zum Reise hinzufügen-->
                 <div id="addReise">
                     <div>Reisename:
                         <br>
@@ -74,9 +81,9 @@
                     <div id="saveReise">
                         <button id="saveReiseButton" onclick="saveReise()">Speichern</button>
                     </div>
-
                 </div>
 
+                <!--Seite zum Reise anzeigen (wird ebenfalls dynamisch geladen)-->
                 <div id="showReise">
                     <div id="reiseinfos"></div>
                     <div id="bildkasten">
@@ -85,38 +92,47 @@
                 </div>
 
             </div>
+
+            <!--Plus-Button zum Reise hinzufügen-->
             <a id="plus" title="Reise hinzufügen" href="javascript: void(0);" onclick="addReise()">
                 <img id="plus" src="grafiken/plus.png">
             </a>
+
+            <!--Navigationspfeil links-->
             <div class="nav" id="navlinks" title="Zurück" onclick="left()">
                 <span id="linkspfeil">←</span> </div>
+
+            <!--Navigationspfeil rechts-->
             <div class="nav" id="navrechts" title="Nächtes Bild" onclick="right()">
                 <span id="rechtspfeil">→</span>
             </div>
         </div>
 
+        <!--Meldung für mobile Geräte-->
         <div id="mobile">
             <img src="grafiken/trippix.png" width="100%" style="max-width: 400px;">
             <h1 style="font-size: auto; width: 100%; color: black;">Diese Seite ist leider nicht kompatibel für mobile Geräte.<br>Sorry :(</h1>
         </div>
     </div>
 
+    <!--Javascript-->
     <script src="username.js"></script>
     <script src="userpic.js"></script>
     <script src="functions.js"></script>
     <script src="reise.js"></script>
 
     <script>
+        //falls mobiles Gerät verwendet wird, wird die Seite ausgeblendet und eine Meldung für mobile Geräte angezeigt
         if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
             document.getElementById("page-wrap").style.visibility = "hidden";
             document.getElementById("navbar").style.visibility = "hidden";
             document.getElementById("body").style.background = "#FFF";
             document.getElementById("mobile").style.visibility = "visible";
         } else {
-            loadUserpic();
-            loadUsername();
-            checkReisen();
-            sessionStorage.removeItem("activeReise");
+            loadUserpic(); //Profilbild laden
+            loadUsername(); //Benutzername laden
+            checkReisen(); //Überprüfen, ob Reisen vorhanden sind
+            sessionStorage.removeItem("activeReise"); //Keine Reise geöffnet
         }
     </script>
 </body>
