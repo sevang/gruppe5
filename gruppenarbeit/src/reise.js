@@ -243,7 +243,7 @@ function loadImage1(src1) {
     reader1.readAsDataURL(src1);
 }
 
-var target1 = document.getElementById("reise_dropzone");
+var target1 = document.getElementById("reisepicDropzone");
 target1.addEventListener("dragover", function (e) {
     e.preventDefault();
 }, true);

@@ -37,7 +37,7 @@ function userpicClick() {
 
 
 function saveNewPic() {
-    var imgAsDataURL1 = canvas.toDataURL("image/png");
+    var imgAsDataURL1 = document.getElementById("userpicCanvas").toDataURL("image/png");
     localStorage.setItem("userpic", imgAsDataURL1);
     document.getElementById("userpic").getContext("2d").clearRect(0, 0, 500, 500);
     loadUserpic();
@@ -49,7 +49,7 @@ var MAX_HEIGHT = 100;
 function render(src) {
     var image = new Image();
     image.onload = function () {
-        var canvas = document.getElementById("canvas");
+        var canvas = document.getElementById("userpicCanvas");
         if (image.height > MAX_HEIGHT) {
             image.width *= MAX_HEIGHT / image.height;
             image.height = MAX_HEIGHT;
@@ -78,7 +78,7 @@ function loadImage(src) {
     reader.readAsDataURL(src);
 }
 
-var target = document.getElementById("dropzonekasten");
+var target = document.getElementById("userpicDropzone");
 target.addEventListener("dragover", function (e) {
     e.preventDefault();
 }, true);
