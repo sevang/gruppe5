@@ -1,0 +1,390 @@
+/*---------------------------------------*/
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-image: url(grafiken/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+h1,
+p,
+div {
+    font-family: Calibri;
+    color: #3B873D;
+    text-align: center;
+}
+
+ul {
+    border-width: 1px;
+    list-style: none;
+    margin: 0;
+    padding: 60px;
+    text-align: center;
+    background-color: #FFF;
+    border-bottom: 1px solid #EDD1A6;
+}
+
+
+/*-------------------Navigationsleiste--------------------*/
+
+#icon {
+    position: relative;
+    float: left;
+    left: 15px;
+    bottom: 111px;
+}
+
+#icon:hover {
+    opacity: 0.8;
+}
+
+#userpic {
+    font-family: Calibri;
+    font-size: 11px;
+    text-decoration: none;
+    float: right;
+    position: relative;
+    right: 18px;
+    bottom: 111px;
+    border-radius: 5px;
+    width: 100px;
+    height: 95px;
+    cursor: pointer;
+    border: 1px solid #aaa;
+}
+
+#userpic:hover {
+    opacity: 0.8;
+}
+
+#username {
+    font-family: Calibri;
+    font-size: 30px;
+    color: #3B873D;
+    text-decoration: none;
+    float: right;
+    position: relative;
+    bottom: 80px;
+    right: 40px;
+}
+
+#username:hover {
+    color: #4FB551;
+}
+
+
+/*------------------Transparenter weißer Kasten---------------------*/
+
+#kasten {
+    position: absolute;
+    left: 12%;
+    width: 76%;
+    height: 77%;
+    margin: 17px auto;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#content {
+    position: relative;
+    left: 8%;
+    width: 100%;
+    height: 100%;
+    max-height: 100px;
+}
+
+#title {
+    margin-left: -40px;
+    margin-right: 120px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+
+/*------------------Startseite---------------------*/
+
+#startseite {
+    position: relative;
+    bottom: 20px;
+    right: 85px;
+}
+
+
+/*------------------Nutzername ändern---------------------*/
+
+#changename {
+    display: none;
+    visibility: hidden;
+    position: relative;
+    bottom: 20px;
+    right: 85px;
+}
+
+#newname {
+    position: relative;
+    bottom: 30px;
+}
+
+#saveNameButton {
+    position: relative;
+    bottom: 35px;
+    text-align: center;
+}
+
+
+/*------------------Profilbild ändern---------------------*/
+
+#changepic {
+    display: none;
+    visibility: hidden;
+    position: relative;
+    bottom: 20px;
+    right: 80px;
+}
+
+#userpicDropzone {
+    background-color: rgba(225, 230, 234, 0.8);
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    position: relative;
+    left: 33px;
+    border-radius: 20px;
+    border: 3px dashed #3B873D;
+    line-height: 70px;
+}
+
+#userpicCanvas {
+    width: 100px;
+    height: 95px;
+    border-radius: 5px;
+    position: relative;
+    top: -20px;
+}
+
+#saveUserpicButton {
+    position: relative;
+    top: 50px;
+    right: 160px;
+    margin: 10px auto;
+}
+
+
+/*------------------Reise hinzufügen---------------------*/
+
+#addReise {
+    display: none;
+    visibility: hidden;
+    position: relative;
+    bottom: 20px;
+    text-align: center;
+    margin-left: -40px;
+    margin-right: 120px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    height: 400px;
+}
+
+#reisepicDropzone {
+    background-color: rgba(225, 230, 234, 0.8);
+    width: 300px;
+    height: 190px;
+    display: inline-block;
+    position: relative;
+    top: 20px;
+    border-radius: 20px;
+    border: 3px dashed #3B873D;
+    text-align: center;
+    line-height: 30px;
+}
+
+#reisecanvas {
+    height: 150px;
+    width: 200px;
+}
+
+#saveReise {
+    position: relative;
+    top: 40px;
+}
+
+#saveReiseButton {
+    position: relative;
+    bottom: 10px;
+}
+
+
+/*------------------Reise anzeigen---------------------*/
+
+#showReise {
+    display: none;
+    visibility: hidden;
+    position: relative;
+    bottom: 20px;
+    right: 80px;
+}
+
+#reiseinfos {
+    position: relative;
+    bottom: 15px;
+}
+
+#reiseimg {
+    position: relative;
+    bottom: 15px;
+    margin-top: 1%;
+    margin-right: 0.4%;
+    max-width: 800px;
+    max-height: 400px;
+    object-fit: contain;
+    border: 5px ridge rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+
+/*------------------Für mobile Ansicht---------------------*/
+
+#mobile {
+    position: absolute;
+    top: 3px;
+    visibility: hidden;
+    width: 100%;
+}
+
+
+/*------------------Plus Button (Reise hinzufügen)---------------------*/
+
+#plus {
+    position: absolute;
+    top: -2%;
+    right: 0.5%;
+    margin-top: 1.5%;
+}
+
+#plus:hover {
+    opacity: 0.9;
+}
+
+
+/*-------------------Pfeile für Navigation--------------------*/
+
+.nav {
+    visibility: hidden;
+}
+
+#navlinks {
+    position: absolute;
+    top: -2%;
+    left: 0%;
+    margin-top: 1%;
+    height: 100%;
+    width: 20%;
+    display: inline-block;
+    transition: 0.3s;
+    border-radius: 5px;
+    font-size: 50px;
+    color: transparent;
+}
+
+#navlinks:hover {
+    background: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.3));
+    color: rgba(0, 0, 0, 0.9);
+}
+
+#linkspfeil {
+    display: inline-block;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+#navrechts {
+    position: absolute;
+    top: -2%;
+    right: 0;
+    margin-top: 1%;
+    height: 100%;
+    width: 20%;
+    transition: 0.3s;
+    border-radius: 5px;
+    font-size: 50px;
+    color: transparent;
+}
+
+#navrechts:hover {
+    background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.3));
+    color: black;
+}
+
+#rechtspfeil {
+    display: inline-block;
+    position: absolute;
+    top: 40%;
+    right: 20%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+
+/*-------------------reise.js--------------------*/
+
+.del {
+    z-index: 1;
+    position: relative;
+    left: 43%;
+    top: 0.3%;
+    border-radius: 5px;
+    opacity: 1;
+}
+
+.del:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.reise {
+    margin-left: 20px;
+    margin-bottom: 30px;
+    width: 200px;
+    height: 150px;
+    display: inline-block;
+    border: 2px solid #3B873D;
+    border-radius: 4px;
+    padding: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 0;
+}
+
+.reise:hover {
+    opacity: 0.8;
+}
+
+.reiseinfo {
+    position: absolute;
+    margin-left: 5px;
+    width: 190px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.infozeile {
+    color: black;
+}

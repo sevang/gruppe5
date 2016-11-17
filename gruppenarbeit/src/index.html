@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>TripPix</title>
+    <link rel="shortcut icon" href="grafiken/favicon.ico" type="image/ico" />
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+
+<body id="body" onkeyup="if (event.keyCode == 37) left(); if (event.keyCode == 39) right()">
+    <div id="navbar">
+        <nav>
+            <ul></ul>
+            <a id="icon" href="javascript: void(0);" onclick="iconClick()" title="Startseite"><img src="grafiken/trippix.png" width="250px"></a>
+
+            <canvas id="userpic" href="javascript: void(0);" onclick="userpicClick()" title="Profilbild ändern"></canvas>
+
+            <a id="username" href="javascript: void(0);" onclick="usernameClick()" title="Username ändern"> </a>
+        </nav>
+    </div>
+
+    <div id="page-wrap">
+        <div id="kasten">
+            <div id="content">
+                <h1 id="title">Willkommen zurück!</h1>
+                <div id="startseite">
+                </div>
+
+                <div id="changename">
+                    <p>Neuer Username:</p>
+                    <br>
+                    <input id="newname" onkeyup="if (event.keyCode == 13) saveNewname()">
+                    <p>
+                        <button id="saveNameButton" onclick="saveNewname()">Speichern</button>
+                    </p>
+                </div>
+
+                <div id="changepic">
+                    <div id="userpicDropzone">
+                        <p>Ziehe dein neues Profilbild in den Kasten</p>
+                        <p>Vorschau:</p>
+                        <canvas id="userpicCanvas"></canvas>
+                    </div>
+                    <button id="saveUserpicButton" onclick="saveNewPic()">Speichern</button>
+                </div>
+
+                <div id="addReise">
+                    <div>Reisename:
+                        <br>
+                        <input id="newReisename" type="text" onkeyup="if (event.keyCode == 13) saveReise()">
+                    </div>
+                    <p style="font-size:7px;"></p>
+                    <div>Reiseort:
+                        <br>
+                        <input id="newReiseort" type="text" onkeyup="if (event.keyCode == 13) saveReise()">
+                    </div>
+                    <p style="font-size:7px;"></p>
+                    <div>Reisebeginn:
+                        <br>
+                        <input id="newReisebeginn" type="date" onkeyup="if (event.keyCode == 13) saveReise()">
+                    </div>
+                    <p style="font-size:7px;"></p>
+                    <div>Reiseende:
+                        <br>
+                        <input id="newReiseende" type="date" onkeyup="if (event.keyCode == 13) saveReise()">
+                    </div>
+
+                    <div id="reisepicDropzone">Ziehe dein Bild von der Reise hier rein
+                        <canvas id="reisecanvas"></canvas>
+                    </div>
+                    <div id="saveReise">
+                        <button id="saveReiseButton" onclick="saveReise()">Speichern</button>
+                    </div>
+
+                </div>
+
+                <div id="showReise">
+                    <div id="reiseinfos"></div>
+                    <div id="bildkasten">
+                        <img id="reiseimg">
+                    </div>
+                </div>
+
+            </div>
+            <a id="plus" title="Reise hinzufügen" href="javascript: void(0);" onclick="addReise()">
+                <img id="plus" src="grafiken/plus.png">
+            </a>
+            <div class="nav" id="navlinks" title="Zurück" onclick="left()">
+                <span id="linkspfeil">←</span> </div>
+            <div class="nav" id="navrechts" title="Nächtes Bild" onclick="right()">
+                <span id="rechtspfeil">→</span>
+            </div>
+        </div>
+
+        <div id="mobile">
+            <img src="grafiken/trippix.png" width="100%" style="max-width: 400px;">
+            <h1 style="font-size: auto; width: 100%; color: black;">Diese Seite ist leider nicht kompatibel für mobile Geräte.<br>Sorry :(</h1>
+        </div>
+    </div>
+
+    <script src="username.js"></script>
+    <script src="userpic.js"></script>
+    <script src="functions.js"></script>
+    <script src="reise.js"></script>
+
+    <script>
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+            document.getElementById("page-wrap").style.visibility = "hidden";
+            document.getElementById("navbar").style.visibility = "hidden";
+            document.getElementById("body").style.background = "#FFF";
+            document.getElementById("mobile").style.visibility = "visible";
+        } else {
+            loadUserpic();
+            loadUsername();
+            checkReisen();
+            sessionStorage.removeItem("activeReise");
+        }
+    </script>
+</body>
+
+</html>

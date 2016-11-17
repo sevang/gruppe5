@@ -1,0 +1,99 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-image: url(grafiken/background.jpg);
+    background-size: 100%;
+    overflow: hidden;
+}
+
+h1,
+p,
+div {
+    font-family: Calibri;
+    color: #3B873D;
+    text-align: center;
+}
+
+ul {
+    border-width: 1px;
+    list-style: none;
+    margin: 0;
+    padding: 60px;
+    text-align: center;
+    background-color: #FFF;
+    border-bottom: 1px solid #EDD1A6;
+}
+
+#userpic {
+    font-family: Calibri;
+    font-size: 11px;
+    text-decoration: none;
+    float: right;
+    position: relative;
+    right: 18px;
+    bottom: 103px;
+}
+
+#username {
+    font-family: Calibri;
+    font-size: 30px;
+    color: #3B873D;
+    text-decoration: none;
+    float: right;
+    position: relative;
+    bottom: 80px;
+    right: 40px;
+}
+
+#username:hover {
+    color: #4FB551;
+}
+
+#icon {
+    position: relative;
+    float: left;
+    left: 15px;
+    bottom: 111px;
+}
+
+#title {
+    margin-left: -40px;
+    margin-right: 120px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+#newname {
+    position: relative;
+    bottom: 30px;
+}
+
+#namebutton {
+    position: relative;
+    bottom: 35px;
+    text-align: center;
+}
+
+#changename {
+    visibility: hidden;
+    position: relative;
+    bottom: 20px;
+    right: 85px;
+}
+
+#changepic {
+    visibility: hidden;
+    position: relative;
+    bottom: 140px;
+    right: 80px;
+}
+
+#plus {
+    position: relative;
+    float: right;
+    margin-right: 9px;
+    margin-top: 11px;
+}
