@@ -9,10 +9,10 @@ Gruppe: Nastassia Lunitz, Zaman Kakhki, Robin Gross, Leon Richter, Sevan Ghazari
 * Benutzernamen festlegen und ändern
 * Profilbild via Drag & Drop hinzufügen und ändern
 * Reise hinzufügen
-** Reisename
-** Ort
-** Datum
-** Bild (via Drag & Drop)
+ * Reisename
+ * Ort
+ * Datum
+ * Bild (via Drag & Drop)
 * Reise löschen
 * Bilder ansehen und mit Pfeiltasten bzw. Leisten zu anderen Bildern wechseln
 
