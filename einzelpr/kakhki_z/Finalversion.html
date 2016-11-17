@@ -22,11 +22,7 @@
 		</script>
         <style>
             #la{
-                font-size: 38px;
-                top: 100px;
-                bottom: 100px;
-                right:auto;
-                left:auto;
+                
                 
             }
             
@@ -51,62 +47,23 @@
                 <section>
                     <section id="fragments1"><p>Praktische Verwendung:</p><br>
                 </section>
-                    <section data-markdown>
-                    <script type="text/template">
-                      #Der Code ...
-```
-function(){
-
-var nummern= [0,1,2,3,4,5,6,7,8,9,10];
-
-var gZahlen= nummern.filter(function(num){
-    return num % 2 === 0;
-    
-    
-})
-}
-```
+                    <section>
+                        <h3>Der Code...</h3>
+                        <img src="css/Screenshots/1.1.PNG">
                         </script>
                     </section>
-                    <section data-markdown>
-                        <script type="text/template">
-In Arrow-Function-Form
-```
-function(){             
-
-var nummern= [0,1,2,3,4,5,6,7,8,9,10];         
-
-var gZahlen= nummern.filter( num => num % 2 === 0);
-}
-```
-                        </script>
+                    <section>
+                        <p>In Arrow-Function-Form</p>
+                        <img src="css/Screenshots/2.2.PNG">
                     </section>
                 </section>
             <section>
                 <section><h3>This-problematik</h3><br>
                 </section>
-                <section data-markdown>
-                    <script type="text/template">
-						## This-Problematik
-
-						Dies ist ein Beispielscode für häufig gemachte Fehler mit Javascript
-
-						```
-
-    function Countdown(){
-        this.count = 10;                // this1
-
-        var timer =  setInterval(function ausdruck() {
-            console.log(this.count--);      //this != this1
-            if (this.count === 0){          //this != this1
-                clearInterval(timer);
-            }
-        }, 1000)
-    }
-    new Countdown();
-
-						```
-					</script>
+                <section>
+                    <h3>This-Problematik</h3>
+                    <p>Dies ist ein Beispielscode für häufig gemachte Fehler mit Javascript</p>
+                    <img src="css/Screenshots/3.3.PNG">
                     </section>  
             </section>
             
@@ -119,47 +76,15 @@ var gZahlen= nummern.filter( num => num % 2 === 0);
             
 
                 
-                <section data-markdown>
-					<script type="text/template">
-						## Codelösung
-
-						
-
-```
-
-    function Countdown(){
-    this.count = 10;                   // this1
-
-    var timer =  setInterval( () =>    //Veränderung
-    { console.log(this.count--);       //this == this1
-    if (this.count === 0){             //this == this1
-        clearInterval(timer);
-    }
-    }, 1000)
-    }
-    new Countdown();
-
-```
-					</script>
+                <section>
+                    <h3>CODELÖSUNG</h3>
+				    <img src="css/Screenshots/4.4.PNG">
 				</section>
                 
             
-                <section data-markdown id="la">
-                    <script type="text/template">
-                    Syntaktischer Aufbau von Arrow-Functions
-                    ```
-(param) => { statements }                       //Ein Parameter, mehrere Statements
-param => { statements }                         //Ein Parameter, mehrere Statements
-param => expression                             //Ein Paramter, nur ein Statement
-
-(param1, param2, …, paramN) => { statements }   //mehrere Parameter, mehrere Statements
-(param1, param2, …, paramN) => expression       //mehrere Parameter, nur ein Statement
-
-() => { statements }                            //kein Parameter, mehrere Statements
-() => expression                                //kein Parameter, nur ein Statement
-```
-                    </script>
-                
+                <section id="la">
+                    <p>Syntaktischer Aufbau von Arrow-Functions</p>
+                    <img src="css/Screenshots/5.5.PNG">
                 </section>
             <section>
                 <p>Vielen Dank für eure Aufmerksamkeit!l</p>
