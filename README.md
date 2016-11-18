@@ -41,8 +41,6 @@ Gruppe: Nastassia Lunitz, Zaman Kakhki, Robin Gross, Leon Richter, Sevan Ghazari
 
 [Quellcode](https://github.com/sevang/gruppe5/blob/master/gruppenarbeit/src)
 
-## Screenshots
-
 ![](gruppenarbeit/trippix.png?raw=true "Übersicht aller Reisen")
 
 ![](gruppenarbeit/trippix1.png?raw=true "Reise anzeigen")
