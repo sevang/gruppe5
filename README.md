@@ -23,7 +23,7 @@ Gruppe: Nastassia Lunitz, Zaman Kakhki, Robin Gross, Leon Richter, Sevan Ghazari
 * File API
 * Canvas 2D 
 
-# Einzelpräsentationen
+## Einzelpräsentationen
 
 [Präsentation N. Lunitz (Geolocation)](https://htmlpreview.github.io/?https://github.com/sevang/gruppe5/blob/master/einzelpr/lunitz_n/Geolocation_Lunitz.html)
 
@@ -35,17 +35,14 @@ Gruppe: Nastassia Lunitz, Zaman Kakhki, Robin Gross, Leon Richter, Sevan Ghazari
 
 [Präsentation S. Ghazarian (Template Strings)](https://htmlpreview.github.io/?https://github.com/sevang/gruppe5/blob/master/einzelpr/ghazarian_s/index.html)
 
-# Gruppenpräsentation
+## Gruppenpräsentation
 
 [Videopräsentation](https://htmlpreview.github.io/?https://github.com/sevang/gruppe5/blob/master/gruppenarbeit/video.html)
 
 [Quellcode](https://github.com/sevang/gruppe5/blob/master/gruppenarbeit/src)
 
-#
-#
+## Screenshots
 
-### Übersicht aller Reisen
 ![](gruppenarbeit/trippix.png?raw=true "Übersicht aller Reisen")
 
-### Reise anzeigen
 ![](gruppenarbeit/trippix1.png?raw=true "Reise anzeigen")
