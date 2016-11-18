@@ -44,3 +44,5 @@ Gruppe: Nastassia Lunitz, Zaman Kakhki, Robin Gross, Leon Richter, Sevan Ghazari
 ![](gruppenarbeit/trippix.png?raw=true "Übersicht aller Reisen")
 
 ![](gruppenarbeit/trippix1.png?raw=true "Reise anzeigen")
+
+[Selbst ausprobieren](http://trippix.bplaced.net)
