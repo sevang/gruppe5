@@ -1,3 +1,4 @@
+![](gruppenarbeit/src/grafiken/trippix.png?raw=true)
 # Gruppe 5 - TripPix
 
 TripPix dient dazu, dem Nutzer eine Sammlung aus verschiedenen Reisen zu erstellen, die er unternommen hat. Zu jeder Reise kann der Nutzer ein Reisefoto hinzufügen, sodass er sich die angelegten Reisen mit dem jeweiligen Bild ansehen kann.
