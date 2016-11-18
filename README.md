@@ -37,7 +37,7 @@ Gruppe: Nastassia Lunitz, Zaman Kakhki, Robin Gross, Leon Richter, Sevan Ghazari
 
 ## Gruppenpräsentation
 
-[Videopräsentation](https://htmlpreview.github.io/?https://github.com/sevang/gruppe5/blob/master/gruppenarbeit/video.html)
+[Videopräsentation (komprimiert)](https://htmlpreview.github.io/?https://github.com/sevang/gruppe5/blob/master/gruppenarbeit/video.html)
 
 [Quellcode](https://github.com/sevang/gruppe5/blob/master/gruppenarbeit/src)
 
